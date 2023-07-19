@@ -1,60 +1,84 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="style.css">
-	<title>SIGN IN </title>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SIGN IN</title>
+  </head>
+  <body>
+    <div class="sig">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="signin()">
+            Sign In
+          </button>
+          <button type="button" class="toggle-btn" onclick="signup()">
+            Sign Up
+          </button>
+        </div>
 
-<div class="sig">
-	<div class="form-box">
-		<div class="button-box">
-			<div id="btn"></div>
-			<button type="button" class="toggle-btn" onclick="signin()">Sign In</button>
-			<button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
-		</div>
-
-
-	<form id="signin" class="input-group">
-		<input type="text" class="input-field" placeholder="User Id" required>
-		<input type="Password" class="input-field" placeholder="Enter Password" required>
-		<input type="checkbox" class="check-box"><span>Remember Password</span>
-		<button type="submit" class="submit-btn">Sign In</button>
-	</form>
-    <form id="signup" class="input-group">
-		<input type="text" class="input-field" placeholder="User Id" required>
-        <input type="email" class="input-field" placeholder="Email Id" required>
-		<input type="Password" class="input-field" placeholder="Enter Password" required>
-		<input type="checkbox" class="check-box"><span>I agree to the Terms & Conditions</span>
-		<button type="submit" class="submit-btn">Sign Up</button>
-	</form>
-
-
-
+        <form id="signin" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <input
+            type="Password"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >Remember Password</span>
+          
+          <button type="submit" class="submit-btn">Sign In</button>
+        </form>
+        <form id="signup" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email Id"
+            required
+          />
+          <input
+            type="Password"
+            class="input-field"
+            placeholder="Enter Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >I agree to the Terms & Conditions</span
+          >
+          <button type="submit" class="submit-btn">Sign Up</button>
+        </form>
+      </div>
     </div>
 
+    <script>
+      var x = document.getElementById("signin");
+      var y = document.getElementById("signup");
+      var z = document.getElementById("btn");
 
-</div>
-
-<script>
-	var x = document.getElementById("signin");
-	var y = document.getElementById("signup");
-	var z = document.getElementById("btn");
-	
-	function signup() {
-		x.style.left = "-300px";
-		y.style.left = "50px";
-		z.style.left = "110px";
-	}
-	function signin() {
-		x.style.left = "30px";
-		y.style.left = "450px";
-		z.style.left = "0px";
-	}
-</script>
-
-
-</body>
+      function signup() {
+        x.style.left = "-300px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+      function signin() {
+        x.style.left = "30px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
+    </script>
+  </body>
 </html>

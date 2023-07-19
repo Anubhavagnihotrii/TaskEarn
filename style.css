@@ -193,7 +193,8 @@ position: absolute;
 .sig{
 	height:100%;
 	width:100%;
-	background-image:linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0,0.5)),url(images/banner.png);
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
+	/* background-image:linear-gradient(rgba(0, 0, 0,0.5),rgba(0, 0, 0,0.5)),url(images/banner.png); */
 	background-position: center;
 	background-size: cover;
 	position: absolute;
@@ -228,7 +229,7 @@ position: absolute;
 	position: absolute;
 	width: 110px;
 	height: 100%;
-	background: linear-gradient(to right, cadetblue,blanchedalmond);
+	background: linear-gradient(to right, rgb(130, 198, 201),rgb(209, 142, 40));
 	border-radius: 30px;
 	transition: 0.5s;
 }
@@ -255,7 +256,7 @@ position: absolute;
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background:linear-gradient(to right, cadetblue,blanchedalmond);
+	background:linear-gradient(to right,rgb(130, 198, 201),rgb(209, 142, 40));
 	border: 0;
     outline: none;
     border-radius: 30px;
